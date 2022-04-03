@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		form{
+			display: grid;
+            margin-left:30px
+		}
+		.main{
+			width: 35%;
+			margin: auto;
+            
+            height:800px;
+            background-color:white
+		}
+		input{
+			margin-right: 80px;
+			margin-top: 80px;
+			height: 30px;
+            border:0px;
+            border-bottom:1px solid rgb(211, 195, 195)
+		}
+		
+	</style>
+</head>
+<body style="background-color:rgb(208, 214, 219)">
+	<div class="main">
+	<h2 style="margin-left:30px" >Welcome Abroad</h2>
+	<form>
+		<p style="color:rgb(63, 59, 59)">Lets know you better and make sure you never lose access to youryour account</p>
+		
+		
+		<input style="margin-top: 20px" id="user" type="text" placeholder="Enter tyour name*">
+		<input id="email" type="text" placeholder="Enter email address*">
+		<input id="mbl" type="number" placeholder="Mobile Number*">
+		
+		
+		<input id="pass" type="password" placeholder="Enter the password*">
+		
+		
+		
+		
+		<hr>
+		<input style="background-color : #ff147b;;margin-top: 20px;color:white" type="submit" value="Sign Up" placeholder="Submit">
+        
+       
+
+
+        
+	</form>
+    <i class="far fa-arrow-alt-circle-right"></i>
+
+
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	
+	document.querySelector("form").addEventListener("submit",formSubmit);
+	var userStack=JSON.parse(localStorage.getItem("userDataBase"))||[];
+
+	function formSubmit(event){
+		event.preventDefault();
+		var email=document.querySelector("#email").value;
+		var pass=document.querySelector("#pass").value;
+		var user=document.querySelector("#user").value;
+		var mbl=document.querySelector("#mbl").value;
+
+		var userData={
+			emailAdd:email,
+			passwd:pass,
+			username:user,
+			mobile:mbl
+			}
+
+		userStack.push(userData)
+		localStorage.setItem("userDataBase",JSON.stringify(userStack));
+		alert("signup Successfully")
+		window.location.href="signin.html";
+	}
+
+
+</script>

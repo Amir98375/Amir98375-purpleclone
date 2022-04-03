@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		form{
+			display: grid;
+            margin-left:30px
+		}
+		.main{
+			width: 35%;
+			margin: auto;
+			margin-top: 100px;
+            
+            height:400px;
+            background-color:white
+		}
+		input{
+			margin-right: 80px;
+			height: 30px;
+            border:0px;
+            border-bottom:1px solid rgb(211, 195, 195)
+		}
+		
+	</style>
+</head>
+<body style="background-color:rgb(208, 214, 219)">
+	<div class="main">
+	
+	<form>
+		<h2>Login/Create Account<span style="color:red">*</span></h2>
+		
+		<input style="margin-top:40px" id="mbl" type="number" placeholder="Enter the moobile Number">
+        
+        <input style="margin-top:40px" type="submit" value="login">
+	</form>
+
+	<div></div>
+        
+	
+
+	
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	
+	document.querySelector("form").addEventListener("submit",login);
+
+	var regUsers=JSON.parse(localStorage.getItem("userDataBase"))||[];
+
+
+	function login(event){
+		event.preventDefault()
+	var mob=document.querySelector("#mbl").value;
+	
+	var ans=true;
+
+	for(var i=0;i<regUsers.length;i++)
+	{
+		if(regUsers[i].mobile==mob){
+			window.location.href="otp.html"
+			localStorage.setItem("eml",JSON.stringify(regUsers[i].emailAdd))
+			ans=false;
+			// console.log(regUsers[i])
+			alert("Enter otp");
+		}
+	}
+	if(ans){
+		alert("Number Not registered please signup first or enter registered number");}
+	
+	
+}
+
+
+
+</script>
