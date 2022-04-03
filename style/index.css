@@ -1,0 +1,176 @@
+#navbar{
+   
+}
+
+#navbar_container{
+    display: flex;
+    
+    height: 40px;
+    
+}
+#nav1{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+   background-color:#ffffff ;
+    margin-left: 70%;
+
+   
+   
+}
+.underdiv{
+    justify-content: flex-end;
+    height: 100%;
+   font-size: 13px;
+    padding-top: 12px;
+    color: gray;
+  
+    
+   
+}
+.underdiv1{
+    margin-left: 30px;
+    color: gray;
+    font-size: 13px;
+    padding-top: 12px;
+    border-left: 1px solid gray;
+    padding-left: 15px;
+    color: gray;
+  
+   
+
+ }
+ .underdiv2{
+    font-size: 13px;
+     margin-left: 30px;
+     border-left: 1px solid gray;
+     padding-left: 12px;
+    color: gray;
+     padding-top: 10px;
+ }
+ #nav2{
+     height: 55px;
+     width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color:#ffffff ;
+     display: flex;
+ }
+ #purpleimg{
+       height: 100%;
+       
+ }
+ #underdiv21{
+     
+     margin-left: 50px;
+ }
+ #underdiv22{
+     
+     width: 55%;
+     margin-left: 30px;
+     display: flex;
+     justify-content: space-between;
+     padding-top: 17px;
+     
+   
+ }
+ #underdiv23{
+    
+     margin-left: 50px;
+     width: 25%;
+     display: flex;
+
+ }
+.submenu1{
+display:none;
+height: 400px;
+width: 450px;
+
+}
+.para:hover .submenu1{
+   display: block;
+ 
+  position: absolute;
+  display: flex;
+}
+p{
+   line-height: 10px;
+   color: grey;
+   font-size: 10px;
+}
+
+#subline2{
+margin-left: 20px;
+}
+#subline3{
+margin-left: 20px;
+}
+#submenubrand{
+display: none;
+height: 400px;
+width: 600px;
+
+
+}
+.para1:hover #submenubrand{
+
+display: block;
+color: red;
+position: absolute;
+display: flex;
+font-size: 30px;
+}
+#mostviewed{
+height: 300px;
+width: 500px;
+}
+#signimg{
+height: 100%;
+margin-left: 30px;
+
+}
+#signindiv{
+   
+height: 200px; width: 150px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+display: none;
+}
+#signin:hover #signindiv{
+display: block;
+position: absolute;
+}
+#button{
+width: 90%;
+margin-left: 5%;
+border-radius: 5%;
+height: 23px;
+background-color:#ff147b;
+color: white;
+
+border: none;
+}
+.para{
+
+margin-left: 10px;
+}
+#hoverpara:hover{
+color: #ff147b;
+font-size: 20px;
+}
+#fontawesome{
+    font-size: 40px; margin-top: -1px; margin-top: 7px;
+    margin-left: 30px;
+}
+#appenddiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid ;
+
+}
+a{
+    text-decoration: none;
+}
+#navbar{
+    position: relative;
+}
+   
