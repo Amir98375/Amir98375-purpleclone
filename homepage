@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style/index.css">
+    <style>
+
+        /* Main Box(Container) */
+        #Box {
+            /* border : 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        /* For NAVBAr
+        #RBox1{
+            border : 1px solid black;
+            height : 100px;
+        } */
+
+      
+        /* For Product Container Box */
+        #container{
+            /* border : 1px solid black; */
+            width : 100%;
+        }
+
+        /* For Displaying Product list & items */
+        #imagebox {
+            width : 80%;
+            /* border  :1px solid red; */
+            /* margin : 5px; */
+            margin-left : 10%;
+           
+           
+        }
+
+        #imagebox > img {
+            margin-bottom : 40px;
+        }
+        #img11 {
+            margin-top : 40px;
+        }
+
+          /* For setting width of  Displaying Product list & items */
+          #images,#img2,#img3,#img11,#image,#image3,#img18,#belowfeature,#img26,#img65,#Belowcarnival{
+            width : 100%;
+        }
+
+        /* For display Skin care store & makeup store  products  */
+        #imgdiv {
+            display :flex;
+        }
+
+        /* Setting width of display Skin care store & makeup store  products  */
+        #imgdiv > img {
+            width : 270px;
+            margin-right : 35px;
+           
+        }
+
+        /* Displaying Products of just arrive */
+        #just {
+            display : flex;
+            /* border  : 1px solid red; */
+            margin-bottom : 30px;
+        }
+
+        /* div for each Displaying Products of just arrive */
+        #divjust{
+            /* border : 1px solid black; */
+           /* width : 650px; */
+           /* height : 350px; */
+           margin-right : 20px;
+        }
+
+        /* img of each Displaying Products of just arrive */
+        #divjust > #img12 {
+            width : 100%;
+            height : 200px;
+        }
+
+        /* name of each Displaying Products of just arrive */
+         #name{
+            width : 220px;
+            height : 38px;
+            overflow: hidden;
+            /* white-space: nowrap; */
+           text-overflow: ellipsis;
+            /* border : 1px solid blue; */
+            color : #6f7d85;
+            font-family: sans-serif;
+            margin-top: 5px;
+
+        }
+
+        /* Headline for just arrive */
+        h3 {
+            color : #2c414c;
+            font-family : sans-serif;
+            margin-bottom: 10px;
+        }
+        /* Price for just arrive */
+        #price {
+            margin-top : -15px;
+            color: #2c414c;
+            font-weight : bolder;
+            font-family: sans-serif;
+        }
+
+        /* Displaying Products of flash Sale */
+        #flash > img {
+            width : 216px;
+            margin-right : 20px; 
+        }
+
+        /* For slideshow */
+        #image3 {
+            margin-top : 40px;
+        }
+
+        /* For Featured Products */
+        #Feature_div,#Feature_div1,#toppicks,#Trending,#bestseller,#combo{
+            display  : flex;
+        }
+
+        /* For below features div */
+        #belowfeature,#belowbestseller,#belowfeature1,#belowtoppicks,#Belowtrending{
+            display : grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+            margin-top : 30px;
+            margin-bottom : 40px;
+        }
+        #belowfeature > img {
+            width : 590px;
+
+        }
+        /* For Below Bestseller */
+        #belowbestseller > img {
+            width : 590px;
+        }
+
+        /* For Featured list 1 */
+        #belowfeature1 > img {
+            width : 590px;
+        }
+
+        /* For Below Topics */
+        #belowtoppicks > img {
+            width : 590px;
+        }
+
+        /* For Below Trending */
+        #Belowtrending > img {
+            width : 590px;
+        }
+
+        /* For Below Carnival */
+        #Belowcarnival {
+            display : grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap : 20px;
+        }
+        #Belowcarnival > img {
+            width : 270px;
+            margin-right: 20px;
+            /* border : 1px solid red; */
+        }
+
+        /* Combo Pack */
+        #combo > img {
+            width : 50%;
+            margin-top: 50px;
+        }
+        /* For Footer ------------------------->>>>>>>>>>>>>>-------------------------------->>>>>>>>*/
+        #footer > img {
+            width : 1200px;
+            margin-left: 149px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="Box">
+
+    </div>
+        <div id="container">
+            <div id="imagebox">
+            <img id="images" src="" alt="">
+            <img id ="img2" src="" alt="">
+            <img id ="img3" src="" alt="">
+            <img id="image" src="" alt="">
+            <div id ="imgdiv">
+            <img id ="img4" src="" alt="">
+            <img id ="img5" src="" alt="">
+            <img id ="img6" src="" alt="">
+            <img id ="img7" src="" alt="">
+            <!-- <img id ="img8" src="" alt="">
+            <img id ="img9" src="" alt="">
+            <img id ="img10" src="" alt=""> -->
+            </div>
+            <img id="img11" src="" alt="">
+            <h3>JUST ARRIVED</h3>
+            <div id="just">
+        </div>
+        <h3>FLASH SALE</h3>
+        <div id="flash">
+            <img id="img13" src="" alt="">
+            <img id="img14" src="" alt="">
+            <img id="img15" src="" alt="">
+            <img id="img16" src="" alt="">
+            <img id="img17" src="" alt="">
+        </div>
+        <img id="image3" src="" alt="">
+        <img id="img18" src="" alt="">
+        <div id="Feature_div">
+
+        </div>
+        <div id="belowfeature">
+            <img id="img19" src="" alt="">
+            <img id="img20" src="" alt="">
+            <img id="img21" src="" alt="">
+            <img id="img22" src="" alt="">
+            <img id="img23" src="" alt="">
+            <img id="img24" src="" alt="">
+            <img id="img25" src="" alt="">
+        </div>
+        <img id="img26" src="" alt="">
+        <div id="bestseller">
+
+        </div>
+        <div id="belowbestseller">
+            <img id="img27" src="" alt="">
+            <img id="img28" src="" alt="">
+            <img id="img29" src="" alt="">
+            <img id="img30" src="" alt="">
+            <img id="img31" src="" alt="">
+            <img id="img32" src="" alt="">
+        </div>
+        <h3>FEATURED</h3>
+        <div id="Feature_div1">
+
+        </div>
+        <div id="belowfeature1">
+            <img id="img33" src="" alt="">
+            <img id="img34" src="" alt="">
+            <img id="img35" src="" alt="">
+            <img id="img36" src="" alt="">
+            <img id="img37" src="" alt="">
+            <img id="img38" src="" alt="">
+        </div>
+        <h3>TOP PICKS FOR YOU</h3>
+        <div id="toppicks">
+
+        </div>
+        <div id="belowtoppicks">
+            <img id="img39" src="" alt="">
+            <img id="img40" src="" alt="">
+            <img id="img41" src="" alt="">
+            <img id="img42" src="" alt="">
+            <img id="img43" src="" alt="">
+            <img id="img44" src="" alt="">
+            <img id="img45" src="" alt="">
+            <img id="img46" src="" alt="">
+            <img id="img47" src="" alt="">
+            <img id="img48" src="" alt="">
+            <img id="img49" src="" alt="">
+            <img id="img50" src="" alt="">
+        </div>
+        <h3>CURRENTLY TRENDING ON PURPLLE</h3>
+        <div id="Trending">
+
+        </div>
+        <div id="Belowtrending">
+            <img id="img51" src="" alt="">
+            <img id="img52" src="" alt="">
+            <img id="img53" src="" alt="">
+            <img id="img54" src="" alt="">
+            <img id="img55" src="" alt="">
+            <img id="img56" src="" alt="">
+            <img id="img57" src="" alt="">
+            <img id="img58" src="" alt="">
+            <img id="img59" src="" alt="">
+            <img id="img60" src="" alt="">
+            <img id="img61" src="" alt="">
+            <img id="img62" src="" alt="">
+            <img id="img63" src="" alt="">
+            <img id="img64" src="" alt="">
+        </div>
+        <img id="img65" src="" alt="">
+        <div id="Belowcarnival">
+            <img id="img66" src="" alt="">
+            <img id="img67" src="" alt="">
+            <img id="img68" src="" alt="">
+            <img id="img69" src="" alt="">
+            <img id="img70" src="" alt="">
+            <img id="img71" src="" alt="">
+            <img id="img72" src="" alt="">
+            <img id="img73" src="" alt="">
+            <img id="img74" src="" alt="">
+            <img id="img75" src="" alt="">
+            <img id="img76" src="" alt="">
+            <img id="img77" src="" alt="">
+            <img id="img78" src="" alt="">
+            <img id="img79" src="" alt="">
+            <img id="img80" src="" alt="">
+            <img id="img81" src="" alt="">
+            <img id="img82" src="" alt="">
+            <img id="img83" src="" alt="">
+            <img id="img84" src="" alt="">
+            <img id="img85" src="" alt="">
+            <img id="img86" src="" alt="">
+            <img id="img87" src="" alt="">
+            <img id="img88" src="" alt="">
+            <img id="img89" src="" alt="">
+            <img id="img90" src="" alt="">
+            <img id="img91" src="" alt="">
+            <img id="img92" src="" alt="">
+            <img id="img93" src="" alt="">
+            <img id="img94" src="" alt="">
+            <img id="img95" src="" alt="">
+            <img id="img96" src="" alt="">
+            <img id="img97" src="" alt="">
+            <img id="img98" src="" alt="">
+            <img id="img99" src="" alt="">
+            <img id="img100" src="" alt="">
+            <img id="img101" src="" alt="">
+            <img id="img102" src="" alt="">
+            <img id="img103" src="" alt="">
+            <img id="img104" src="" alt="">
+            <img id="img105" src="" alt="">
+            <img id="img106" src="" alt="">
+            <img id="img107" src="" alt="">
+            <img id="img108" src="" alt="">
+             <img id="img109" src="" alt="">
+        </div>
+        <div id="combo">
+            <img id="img110" src="" alt="">
+            <img id="img111" src="" alt="">
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <img id="Foot1" src="https://www.linkpicture.com/q/footer1.png" alt="">
+    <img id="Foot2" src="https://www.linkpicture.com/q/footer2_1.png" alt="">
+</div>
+</body>
+</html>
+<!-- -------------------------------------------------------Scripts--------------------------------------------------- -->
+<script type="module">
+
+ import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+
+    let slide_img = document.getElementById('images');
+
+let i = 0;
+let images_arr = [];
+let time = 3000;
+
+images_arr[0] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max,f-gif/mediafiles/ecomm/misc/1645449405_purplle-new-web.gif'
+images_arr[1] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max,f-gif/mediafiles/ecomm/misc/1645452779_gv-yami-gif-web-banner.gif'
+images_arr[2] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645449375_vega_web_hp.jpg'
+images_arr[3] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645509669_itc_webhp.jpg'
+images_arr[4] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max,f-gif/mediafiles/ecomm/misc/1645452863_nyb-takeover-red-hot-sale-newlaunch-banner_1298_418.gif'
+images_arr[5] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max,f-gif/mediafiles/ecomm/misc/1645529570_k-beauty_web.gif'
+images_arr[6] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max,f-gif/mediafiles/ecomm/misc/1645450970_sunscreens-store-web-home.gif'
+images_arr[7] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645449376_mcaffeine-home-web.jpg'
+images_arr[8] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645247411_hidden-gem_web_hp.jpg'
+images_arr[9] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1644474508_appliances-store-home-web-1.jpg'
+
+
+let a = setInterval(function (){
+    
+    if( i == 10) {
+        i=0;
+    }
+    slide_img.src = images_arr[i];
+    i = i + 1;
+},time)
+let img_2 = document.getElementById('img2');
+img_2.src = "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1644063553_newly-launched-at-purplle-web.jpg";
+let img_3 = document.getElementById('img3');
+img_3.src = "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645088728_bestsellers_.jpg";
+let img_4 = document.getElementById('img4');
+img_4.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203253_1-skincare-store.png";
+let img_5 = document.getElementById('img5');
+img_5.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203254_2-makeup-store_.png";
+let img_6 = document.getElementById('img6');
+img_6.src ="https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203253_3-haircare-store.png";
+let img_7 = document.getElementById('img7');
+img_7.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203252_4-luxury-store_.png";
+// let img_8 = document.getElementById('img8');
+// img_8.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203251_5-wellness-store_.png";
+// let img_9 = document.getElementById('img9');
+// img_9.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203249_6-appliances-store.png";
+// let img_10 = document.getElementById('img10');
+// img_10.src = "https://media6.ppl-media.com/tr:w-457,ar-3-4,c-at_max/mediafiles/ecomm/misc/1645203248_7-fragrance-store_.png";
+
+let img_11 = document.getElementById('img11');
+img_11.src = "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645451207_web-strip.jpg";
+
+let justArrive = JSON.parse(localStorage.getItem("Justarrived"));
+Justarrive (justArrive);
+
+function Justarrive (justArrive){
+    justArrive.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("just").append(div);
+    }) 
+}
+
+let img_13 = document.getElementById("img13");
+img_13.src = "https://media6.ppl-media.com/tr:w-457,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645515863_red-1-copy-7.jpg";
+let img_14 = document.getElementById("img14");
+img_14.src = "https://media6.ppl-media.com/tr:w-457,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645517218_blue-heaven_22nd-320x480.png";
+let img_15 = document.getElementById("img15");
+img_15.src = "https://media6.ppl-media.com/tr:w-457,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645515863_red-1-copy-2.jpg";
+let img_16 = document.getElementById("img16");
+img_16.src = "https://media6.ppl-media.com/tr:w-457,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645518077_schwarzkopf-professional_22nd-copy-1-320x480.jpeg";
+let img_17 = document.getElementById("img17");
+img_17.src = "https://media6.ppl-media.com/tr:w-457,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645515862_red-1-copy-3.jpg";
+
+
+
+let slide_img2 = document.getElementById('image');
+
+let j = 0;
+let images2_arr = [];
+let time2 = 3000;
+
+images2_arr[0] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645448625_appfirst_web.png'
+images2_arr[1] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645206856_web_welcome.png'
+
+
+
+let b = setInterval(function (){
+    
+    if( j == 2) {
+        j=0;
+    }
+    slide_img2.src = images2_arr[j];
+    j = j + 1;
+},time2)
+
+// ----------->
+
+let slide_img3 = document.getElementById('image3');
+
+let k = 0;
+let images3_arr = [];
+let time3 = 3000;
+
+images3_arr[0] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645461690_web-1.png'
+images3_arr[1] = 'https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645447400_android-phone_web.png'
+
+
+
+let c = setInterval(function (){
+    
+    if( k == 2) {
+        k=0;
+    }
+    slide_img3.src = images3_arr[k];
+    k = k + 1;
+},time3)
+
+let img_18 = document.getElementById("img18");
+img_18.src = "https://media6.ppl-media.com/mediafiles/ecomm/misc/1620880262_featured-web.png";
+
+
+
+let features = JSON.parse(localStorage.getItem("feature"));
+ Featureprod (features);
+
+function Featureprod (features){
+    features.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("Feature_div").append(div);
+    }) 
+}
+
+let img_19 = document.getElementById("img19");
+img_19.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645452787_pb-team-celeb-banner.gif";
+
+let img_20 = document.getElementById("img20");
+img_20.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645436839_faces_21st_02.png";
+
+let img_21 = document.getElementById("img21");
+img_21.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645171352_lakme-720x350.png";
+
+let img_22 = document.getElementById("img22");
+img_22.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645452870_final-ihb-celeb-banner.gif";
+
+let img_23 = document.getElementById("img23");
+img_23.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645533833_haircare-bestsellers_22nd.png";
+
+let img_24 = document.getElementById("img24");
+img_24.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645452212_redtemplate_celeb-banner_720x350_facemask_bogo.gif";
+
+let img_25 = document.getElementById("img25");
+img_25.src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645333615_mamaearth-copy-1-720x350.png";
+
+let img_26 = document.getElementById("img26");
+img_26.src = "https://media6.ppl-media.com/mediafiles/ecomm/promo/1563449496_best-seller-d.jpg";
+
+
+
+let Bestsell = JSON.parse(localStorage.getItem("BestSeller"));
+ Bestsellprod (Bestsell);
+
+function Bestsellprod (Bestsell){
+    Bestsell.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("bestseller").append(div);
+    }) 
+}
+
+let img_27 = document.getElementById("img27");
+img_27.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645437807_sq.gif";
+
+let img_28 = document.getElementById("img28");
+img_28.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645426771_maybelline-copy-1.png";
+
+let img_29 = document.getElementById("img29");
+img_29.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645437812_pu-1.gif";
+
+let img_30 = document.getElementById("img30");
+img_30.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645176901_blue-heaven_20th-1.png";
+
+let img_31 = document.getElementById("img31");
+img_31 .src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645171655_wow-720x350.png";
+
+let img_32 = document.getElementById("img32");
+img_32 .src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645452343_flat-25-off.gif";
+
+
+
+let features1 = JSON.parse(localStorage.getItem("FEATURED"));
+ Featureproducts (features1);
+
+function Featureproducts (features1){
+    features1.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("Feature_div1").append(div);
+    }) 
+}
+
+
+let img_33 = document.getElementById("img33");
+img_33 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645514570_swiss-beauty-22-feb.jpg";
+
+let img_34 = document.getElementById("img34");
+img_34 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645453936_lotus-herbals_22nd-720x350.png";
+
+let img_35 = document.getElementById("img35");
+img_35 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645534375_mcaffeine-copy-1-720x350-1.png";
+
+let img_36 = document.getElementById("img36");
+img_36 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645453800_biotique_22nd-720x350.png";
+
+let img_37 = document.getElementById("img37");
+img_37 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645171655_wow-720x350.png";
+
+let img_38 = document.getElementById("img38");
+img_38 .src ="https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645453589_loreal_22nd-720x350.png";
+
+
+
+let Top_Pick = JSON.parse(localStorage.getItem("TOPPICKS"));
+ toppickproducts ( Top_Pick);
+
+function toppickproducts ( Top_Pick){
+     Top_Pick.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("toppicks").append(div);
+    }) 
+}
+
+let img_39 = document.getElementById("img39");
+img_39.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645453959_garnier-hair_22nd-720x350.png";
+
+let img_40 = document.getElementById("img40");
+img_40.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645413203_schwarzkopf-professional-21-27-feb.jpg";
+
+let img_41 = document.getElementById("img41");
+img_41.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645172060_nivea-720x350.png";
+
+let img_42 = document.getElementById("img42");
+img_42.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532411_vega-720x350.png";
+
+let img_43 = document.getElementById("img43");
+img_43.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532412_plum-23rd-720x350.png";
+
+let img_44 = document.getElementById("img44");
+img_44.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645333612_neutrogena-720x350.png";
+
+let img_45 = document.getElementById("img45");
+img_45.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645333613_minimalist-copy-1-720x350.png";
+
+let img_46 = document.getElementById("img46");
+img_46.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645422965_m-a-c-_02-720x350.png";
+
+let img_47 = document.getElementById("img47");
+img_47.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645535292_fiama-720x350.png";
+
+let img_48 = document.getElementById("img48");
+img_48.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645535343_engage-720x350.png";
+
+let img_49 = document.getElementById("img49");
+img_49.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645270435_makeup-revolution-wet-n-wild-l-a-girl-copy-1-720x350.jpeg";
+
+let img_50 = document.getElementById("img50");
+img_50.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532415_o3-720x350.png";
+
+
+let TrendingProd = JSON.parse(localStorage.getItem("TRENDING"));
+ Trendingproducts ( TrendingProd);
+
+function Trendingproducts ( TrendingProd){
+     TrendingProd.map(function (el) {
+      let div = document.createElement("div");
+      div.setAttribute("id","divjust")
+
+      let image = document.createElement("img");
+      image.src = el.img;
+      image.setAttribute("id","img12")
+
+      let name = document.createElement("p");
+      name.innerHTML= el.name;
+      name.setAttribute("id","name")
+
+      let price = document.createElement("p");
+      price.innerHTML = `₹${el.price}`;
+      price.setAttribute("id","price");
+
+      div.append(image,name,price);
+
+      document.getElementById("Trending").append(div);
+    }) 
+}
+
+let img_51 = document.getElementById("img51");
+img_51.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645272605_sugar_01-copy-1-720x350.jpeg";
+
+let img_52 = document.getElementById("img52");
+img_52.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645453589_loreal_22nd-720x350.png";
+
+let img_53 = document.getElementById("img53");
+img_53.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532413_philips-720x350-1.png";
+
+let img_54 = document.getElementById("img54");
+img_54.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645452301_flat-35-off-fr-banner.gif";
+
+let img_55 = document.getElementById("img55");
+img_55.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532412_the-moms-co-720x350-1.png";
+
+let img_56 = document.getElementById("img56");
+img_56.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645532414_hiphop-23rd-720x350_1645531127029_0.png";
+
+let img_57 = document.getElementById("img57");
+img_57.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645171872_dermafique-720x350.png";
+
+let img_58 = document.getElementById("img58");
+img_58.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645333608_streax-streax-professional-copy-1-720x350.png";
+
+let img_59 = document.getElementById("img59");
+img_59.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645270436_daily-life-forever52-copy-1-720x350.jpeg";
+
+let img_60 = document.getElementById("img60");
+img_60.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645172426_loreal-pro-matrix-720x350.png";
+
+let img_61 = document.getElementById("img61");
+img_61.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645172535_plix-720x350.png";
+
+let img_62 = document.getElementById("img62");
+img_62.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645272606_oziva-copy-1-720x350.jpeg";
+
+let img_63 = document.getElementById("img63");
+img_63.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max,f-gif/mediafiles/ecomm/misc/1645257673_glamrs-celeb-banners-20-.gif";
+
+let img_64 = document.getElementById("img64");
+img_64.src = "https://media6.ppl-media.com/tr:w-640,ar-20557-9993,c-at_max/mediafiles/ecomm/misc/1645189975_elite-720x350.png";
+
+
+
+let img_65 = document.getElementById("img65");
+img_65.src = "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1645088477_carnival-of-best-beauty-brands-web.jpg";
+
+
+let img_66 = document.getElementById("img66");
+img_66.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527451_ponds-320x480.jpeg";
+
+let img_67 = document.getElementById("img67");
+img_67.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527452_aroma-magic-320x480.jpeg";
+
+let img_68 = document.getElementById("img68");
+img_68.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527453_vlcc-320x480.jpeg";
+
+let img_69 = document.getElementById("img69");
+img_69.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527902_vaseline.jpg";
+
+let img_70 = document.getElementById("img70");
+img_70.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250203_mac_splurgetile.jpg";
+
+let img_71 = document.getElementById("img71");
+img_71.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250203_estee-tile.jpg";
+
+let img_72 = document.getElementById("img72");
+img_72.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527635_ikonic-professional-21-320x480.jpeg";
+
+let img_73 = document.getElementById("img73");
+img_73.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456110_everyuth-320x480.jpeg";
+
+let img_74 = document.getElementById("img74");
+img_74.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527711_the-derma-co-320x480.jpeg";
+
+let img_75 = document.getElementById("img75");
+img_75.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645527712_insight-320x480.jpeg";
+
+let img_76 = document.getElementById("img76");
+img_76.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250202_clinique_splurgetile.jpg";
+
+let img_77 = document.getElementById("img77");
+img_77.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645551130_bobbi-brown-tile.jpg";
+
+let img_78 = document.getElementById("img78");
+img_78.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456117_nature-s-essence-320x480.jpeg";
+
+let img_79 = document.getElementById("img79");
+img_79.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645357240_sanfe-21-320x480.jpeg";
+
+let img_80 = document.getElementById("img80");
+img_80.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645528882_vayam-320x480.jpeg";
+
+let img_81 = document.getElementById("img81");
+img_81.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645528881_asfa-halal-320x480.jpeg";
+
+let img_82 = document.getElementById("img82");
+img_82.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645449048_tfs_hydration_tile.jpg";
+
+let img_83 = document.getElementById("img83");
+img_83.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645602306_cosrx.jpg";
+
+let img_84 = document.getElementById("img84");
+img_84.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456113_kapiva-320x480.jpeg";
+
+let img_85 = document.getElementById("img85");
+img_85.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456120_power-gummies-320x480.jpeg";
+
+let img_86 = document.getElementById("img86");
+img_86.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645533564_tresemme-320x480.jpeg";
+
+let img_87 = document.getElementById("img87");
+img_87.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645533594_la-girl-320x480.jpeg";
+
+let img_88 = document.getElementById("img88");
+img_88.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645533594_bblunt-320x480.jpeg";
+
+let img_89 = document.getElementById("img89");
+img_89.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645533595_dove-320x480.jpeg";
+
+let img_90 = document.getElementById("img90");
+img_90.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250205_tribe-concept-tile.jpg";
+
+let img_91 = document.getElementById("img91");
+img_91.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250204_rovectin-600x900.png";
+
+let img_92 = document.getElementById("img92");
+img_92.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645533682_lets-shave-320x480.jpeg";
+
+let img_93 = document.getElementById("img93");
+img_93.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456109_chicnutrix-320x480.jpeg";
+
+let img_94 = document.getElementById("img94");
+img_94.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456113_imagic-320x480.jpeg";
+
+let img_95 = document.getElementById("img95");
+img_95.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456116_makeup-revolution-320x480.jpeg";
+
+let img_96 = document.getElementById("img96");
+img_96.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645116643_bella-voste-320x480.jpeg";
+
+let img_97 = document.getElementById("img97");
+img_97.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456126_wet-n-wild-320x480.jpeg";
+
+let img_98 = document.getElementById("img98");
+img_98.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645250205_thank-you-farmer-600x900.jpg";
+
+let img_99 = document.getElementById("img99");
+img_99.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456121_quench-botanics-320x480.jpeg";
+
+let img_100 = document.getElementById("img100");
+img_100.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456108_bronson-professional-320x480.jpeg";
+
+let img_101 = document.getElementById("img101");
+img_101.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645534148_klairs-320x480.jpeg";
+
+let img_102 = document.getElementById("img102");
+img_102.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645534148_tnw-natural-wash-320x480.jpeg";
+
+let img_103 = document.getElementById("img103");
+img_103.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645534149_khadi-naturals-320x480.jpeg";
+
+let img_104 = document.getElementById("img104");
+img_104.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645534150_lacto-calamine-21-320x480.jpeg";
+
+let img_105 = document.getElementById("img105");
+img_105.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456119_pilgrim-320x480.jpeg";
+
+let img_106 = document.getElementById("img106");
+img_106.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645425751_myglamm-3.png";
+
+let img_107 = document.getElementById("img107");
+img_107.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456118_oxyglow-320x480.jpeg";
+
+let img_108 = document.getElementById("img108");
+img_108.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645456111_godrej-professional-320x480.jpeg";
+
+let img_109 = document.getElementById("img109");
+img_109.src = "https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1645116659_rey-naturals-320x480.jpeg";
+
+let img_110 = document.getElementById("img110");
+img_110.src = "https://media6.ppl-media.com/tr:w-640,ar-1343-938,c-at_max/mediafiles/ecomm/misc/1645086504_web_01.jpg";
+
+let img_111 = document.getElementById("img111");
+img_111.src = "https://media6.ppl-media.com/tr:w-640,ar-1343-938,c-at_max/mediafiles/ecomm/misc/1645086503_web_02.jpg";
+
+
+
+</script>
