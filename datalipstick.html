@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/./product.css">
+    <link rel="stylesheet" href="./style/index.css">
+    
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="sort-select" ></div>
+  <select name="" id="sort_select" onchange="h()">
+    <option value="">sort by price</option>
+    <option value="high">high to low</option>
+    <option value="low">high to low</option>
+  </select>
+    <div id="container">
+    
+    </div>
+    
+    
+ 
+</body>
+</html>
+<script type="module">
+    var lipstick;
+    import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+    //import appenddata from "/index.js"
+  // var data;
+    async function fetchdata(){
+      var res = await fetch("https://purpleproject.herokuapp.com/lipsticks")
+    var  data = await res.json()
+    //  console.log(data)
+    appenddata(data)
+     console.log(data)
+    }
+    
+   fetchdata()
+   // console.log(result,"outside")
+
+   function appenddata(data){
+ console.log("data",data)
+   
+ let parent = document.getElementById('container')
+    let cartArr=JSON.parse(localStorage.getItem('cartitems'))||[]
+    data.forEach(function(element) { 
+
+        
+        
+        console.log("lol")
+        let div = document.createElement('div')
+       parent.append(div)
+
+        let img =  document.createElement('img')
+        img.setAttribute('id','imgid')
+        img.src=element.image_url
+        div.append(img)
+
+        
+        let para2 = document.createElement('p')
+        para2.innerText="title:"+element.title
+        div.append(para2)
+
+        let para = document.createElement('p')
+        para.innerText="price:"+element.price
+        div.append(para)
+
+        let para1 = document.createElement('p')
+        para1.innerText="discount price:"+element.off_price
+        div.append(para1)
+        
+        let but =document.createElement('button')
+        but.setAttribute('id','imging')
+        but.textContent='add to cart'
+
+        but.addEventListener('click',function(){
+            addtocart(element)
+        })
+        div.append(but)
+
+        function addtocart(element){
+          // console.log(element)
+          for(let i=0;i<cartArr.length;i++){
+            if(element._id==cartArr[i]._id){
+              alert("Item is already present in the cart")
+              return;
+            }
+          }
+            cartArr.push(element)
+            localStorage.setItem('cartitems',JSON.stringify(cartArr))
+            alert("Added Successfully");
+            window.location.reload();
+        }
+
+    
+    });
+}
+   
+
+   
+   
+   // 
+    //appenddata(parent,fetchdata)
+
+    
+    
+</script>

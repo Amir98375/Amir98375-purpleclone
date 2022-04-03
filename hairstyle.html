@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/./product.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div class="sorting">
+       
+    <select id="sort-select" onchange="handleSort()">
+      <option value="">sort by</option>
+      <option value="Low-High">Price Low-High</option>
+      <option value="High-Low">Price High-Low</option>
+    </select>
+
+
+    <div id="container"></div>
+</body>
+</html>
+<script type="module">
+   
+   import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+
+  //   import appenddata from '/index.js'
+  //    let lipstick=[
+  //    {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/267520/vega-3-in-1-hair-styler-straightener-curler-and-crimper-vhscc-01-black_2_display_1629437541_ba8e91e6.jpg",
+  //     name: "straightener",
+  //     price: "1170",
+  //     strikedoffprice: "899",
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/267532/vega-keratin-3-in-1-hair-styler-straightener-curler-and-crimper-vhscc-03-1n-rose-gold_2_display_1625812421_2e3adeb9.jpg",
+  //     name: "curler  ",
+  //     price: 699,
+  //     strikedoffprice: 399,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/222794/gorgio-professional-mg-03-3-in-1-hair-styler_1_display_1609821813_4bca753e.jpg",
+  //     name: "WCHSDF",
+  //     price: 945,
+  //     strikedoffprice: 700,
+  //   },
+  //   {
+  //     image_url:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/264646/havells-hc4045-5-in-1-hair-styler-straightener-19mm-curler-crimper-conical-curler-and-volume-brush-for-multiple-styles-blue-black_1_display_1639984797_418a60e1.jpg",
+  //     name: "havells straightener",
+  //     price: 399,
+  //     strikedoffprice: 300,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/257032/wahl-wchs4-1424-straigh-and-curl-hair-straightner-black_1_display_1632232527_82856e02.jpg",
+  //     name: " wahl WCHS4",
+  //     price: 1620,
+  //     strikedoffprice: 800,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/251306/babyliss-air-style-1000-blower-brush-black_1_display_1629267165_98fc74cd.jpg ",
+  //     name: "blower" ,
+  //     price: 1440,
+  //     strikedoffprice: 650,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/257033/wahl-wchs6-1624-lollipop-mini-straightener-and-curler-blue_1_display_1632232799_8aaffbbc.jpg",
+  //     name: "mini  straightener ",
+  //     price: 1999,
+  //     strikedoffprice: 1150,
+  //   },
+  //   {
+  //     image_url:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/178716/gorgio-professional-hot-air-box-hair-dryer-with-styler-brush_1_display_1561791598_92672175.jpg" ,
+  //     name: "hair dryer",
+  //     price: 769,
+  //     strikedoffprice: 680,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/250156/beurer-ht50-hot-air-brush-black_4_display_1639045405_7c4365b3.jpg",
+  //     name: "air brush ",
+  //     price: 1299,
+  //     strikedoffprice: 780,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/222794/gorgio-professional-mg-03-3-in-1-hair-styler_1_display_1609821813_4bca753e.jpg",
+  //     name: "blender",
+  //     price: 699,
+  //     strikedoffprice: 980,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/264648/havells-hc4085-air-care-styler-pre-styling-half-brush-and-drying-nozzle-styling-curlers-smoothening-roller-brush-suitable-for-all-hair-types-black_1_display_1636712232_663c755c.jpg ",
+  //     name: "pre styling half ",
+  //     price: 1620,
+  //     strikedoffprice: 1050,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/250172/beurer-ht60-multi-function-styler_4_display_1628574172_3260e475.jpg",
+  //     name: "beurer",
+  //     price: 1620,
+  //     strikedoffprice: 880,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/257033/wahl-wchs6-1624-lollipop-mini-straightener-and-curler-blue_1_display_1632232799_8aaffbbc.jpg",
+  //     name: "mini straightner",
+  //     price: 599,
+  //     strikedoffprice: 402,
+  //   },
+  //   ]
+  // let parent = document.getElementById('container')
+  //   appenddata(parent,lipstick)
+
+  async function fetchdata(){
+      var res = await fetch("https://purpleproject.herokuapp.com/hairs")
+    var  data = await res.json()
+    //  console.log(data)
+    appenddata(data)
+     console.log(data)
+    }
+    
+   fetchdata()
+   // console.log(result,"outside")
+
+   function appenddata(data){
+ console.log("data",data)
+   
+ let parent = document.getElementById('container')
+   let cartArr=JSON.parse(localStorage.getItem('cartitems'))||[]
+    data.forEach(function(element) { 
+
+        
+        
+        console.log("lol")
+        let div = document.createElement('div')
+       parent.append(div)
+
+        let img =  document.createElement('img')
+        img.setAttribute('id','imgid')
+        img.src=element.image_url
+        div.append(img)
+
+        
+        let para2 = document.createElement('p')
+        para2.innerText="title:"+element.title
+        div.append(para2)
+
+        let para = document.createElement('p')
+        para.innerText="price:"+element.price
+        div.append(para)
+
+        let para1 = document.createElement('p')
+        para1.innerText="discount price:"+element.off_price
+        div.append(para1)
+        
+        let but =document.createElement('button')
+        but.setAttribute('id','imging')
+        but.textContent='add to cart'
+
+        but.addEventListener('click',function(){
+            addtocart(element)
+        })
+        div.append(but)
+        function addtocart(element){
+          // console.log(element)
+          for(let i=0;i<cartArr.length;i++){
+            if(element._id==cartArr[i]._id){
+              alert("Item is already present in the cart")
+              return;
+            }
+          }
+            cartArr.push(element)
+            localStorage.setItem('cartitems',JSON.stringify(cartArr))
+            alert("Added Successfully");
+            window.location.reload();
+        }
+ 
+
+    
+    });
+}
+
+</script>

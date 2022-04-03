@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/./product.css">
+<link rel="stylesheet" href="./style/index.css">
+    <script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="container"></div>
+</body>
+</html>
+<script type="module">
+  import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+    import appenddata from '/index.js'
+     let lipstick=[
+     {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/245095/good-vibes-brightening-body-lotion-liquorice-200-ml-2-18_9_display_1626238361_d31de01f.jpg",
+      name: "body lotion",
+      price: "1170",
+      strikedoffprice: "899",
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/150863/neutriderm-moisturising-lotion-125-ml_1_display_1613630889_13a13f93.jpg",
+      name: " lotion vitamins ",
+      price: 699,
+      strikedoffprice: 399,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/206655/nivea-whitening-even-tone-body-lotion-200-ml_2_display_1551347433_c7c5fc97.jpg",
+      name: "nivea",
+      price: 945,
+      strikedoffprice: 700,
+    },
+    {
+      image_url:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/232948/vaadi-herbals-value-pack-of-3-sunscreen-lotion-spf-50-with-aloe-vera-and-chamomile-110-ml-3_1_display_1518693544_c680e26b.jpg",
+      name: "vaadi herbal",
+      price: 399,
+      strikedoffprice: 300,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/244058/vaadi-herbals-bamboo-age-defying-moisturizer-with-grapeseed-extract-60-ml-x4_1_display_1521521214_8606c0e2.jpg",
+      name: "vadi herbals ",
+      price: 1620,
+      strikedoffprice: 800,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/235454/myglamm-iridescent-brightening-body-lotion_1_display_1639467198_ca82d8ec.jpg ",
+      name: "my glamm" ,
+      price: 1440,
+      strikedoffprice: 650,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/270758/minimalist-0-3-percentage-ceramides-barrier-repair-moisturizing-cream-with-bisabolol-for-dry-skin_2_display_1643968349_eff8e823.jpg",
+      name: "barrier repair ",
+      price: 1999,
+      strikedoffprice: 1150,
+    },
+    {
+      image_url:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/245095/good-vibes-brightening-body-lotion-liquorice-200-ml-2-18_9_display_1626238361_d31de01f.jpg" ,
+      name: "",
+      price: 769,
+      strikedoffprice: 680,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-New04_ZlRSreYl-t.png,ofo-top_right/static/img/product/264317/good-vibes-brightening-body-lotion-coffee-200ml_1_display_1638524306_852d19f5.jpg",
+      name: "body lotion ",
+      price: 1299,
+      strikedoffprice: 780,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-New04_ZlRSreYl-t.png,ofo-top_right/static/img/product/249185/good-vibes-strawberry-skin-softening-body-lotion-400ml-100-ml-free-1_2_display_1627996838_3dc4f8a3.jpg",
+      name: "skin softner",
+      price: 699,
+      strikedoffprice: 980,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/245095/good-vibes-brightening-body-lotion-liquorice-200-ml-2-18_9_display_1626238361_d31de01f.jpg ",
+      name: " brightening",
+      price: 1620,
+      strikedoffprice: 1050,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/255812/vlcc-almond-honey-deep-nourishing-and-skin-brighteneing-body-lotion-buy-1-get-1-free_1_display_1510635039_ab934f6e.jpg",
+      name: "VLCC almond",
+      price: 1620,
+      strikedoffprice: 880,
+    },
+    {
+      image_url:
+        "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/215458/good-vibes-deep-moisturizing-body-lotion-shea-butter-200-ml-1_7_display_1621054118_a56d7f74.jpg",
+      name: "deep moisturizing",
+      price: 599,
+      strikedoffprice: 402,
+    },
+    ]
+  let parent = document.getElementById('container')
+    appenddata(parent,lipstick)
+</script>
+

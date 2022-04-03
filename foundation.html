@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/product.css">
+<script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/./product.css">
+<link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="container"></div>
+</body>
+</html>
+<script type="module">
+    
+    import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+
+  //   import appenddata from '/index.js'
+  //    let lipstick=[
+  //    {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-Best_Seller_235x235small_e0fLESWoel.png,ofo-top_right/static/img/product/211890/lakme-sun-expert-ultra-matte-spf-40-pa-compact-7-g_3_display_1556887770_f561c73c.jpg",
+  //     name: "sun eexpert",
+  //     price: "1170",
+  //     strikedoffprice: "899",
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/210919/lakme-absolute-perfect-radiance-skin-brightening-day-creme-50-g_1_display_1615968869_4aee738c.jpg",
+  //     name: " absolute perfect ",
+  //     price: 699,
+  //     strikedoffprice: 399,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/197458/lakme-eyeconic-kajal-black-0-35-g1_1_display_1565343869_05201d8e.jpg",
+  //     name: "lakme electronics",
+  //     price: 945,
+  //     strikedoffprice: 700,
+  //   },
+  //   {
+  //     image_url:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/255657/lakme-9-to-5-complexion-care-cc-cream-almond-30-g-11-11_8_display_1631683598_6c1169a0.jpg",
+  //     name: "careCC",
+  //     price: 399,
+  //     strikedoffprice: 300,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/255657/lakme-9-to-5-complexion-care-cc-cream-almond-30-g-11-11_8_display_1631683598_6c1169a0.jpg",
+  //     name: "lakme Peach milk ",
+  //     price: 1620,
+  //     strikedoffprice: 800,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/245987/lakme-vitamin-c-serum-30-ml-10_10_display_1625641569_7414ad5a.jpg ",
+  //     name: "vibro" ,
+  //     price: 1440,
+  //     strikedoffprice: 650,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/239508/lakme-absolute-perfect-radiance-skin-brightening-serum-30-ml_2_display_1606457624_0b471c07.jpg",
+  //     name: " Lakme absolute",
+  //     price: 1999,
+  //     strikedoffprice: 1150,
+  //   },
+  //   {
+  //     image_url:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/184970/lakme-9to5-primer-matte-perfect-cover-foundation-w120-warm-creme-25-ml_4_display_1579068705_76309142.jpg" ,
+  //     name: "Lakme foundation",
+  //     price: 769,
+  //     strikedoffprice: 680,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/234664/lakme-vitamin-c-night-cream-50-g_3_display_1619500544_29366213.jpg",
+  //     name: "lakme vit c ",
+  //     price: 1299,
+  //     strikedoffprice: 780,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/184970/lakme-9to5-primer-matte-perfect-cover-foundation-w120-warm-creme-25-ml_4_display_1579068705_76309142.jpg",
+  //     name: "Lakme perfect",
+  //     price: 699,
+  //     strikedoffprice: 980,
+  //   },
+  //   {
+  //     image_url:
+  //       " https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/184970/lakme-9to5-primer-matte-perfect-cover-foundation-w120-warm-creme-25-ml_4_display_1579068705_76309142.jpg",
+  //     name: "lakme ",
+  //     price: 1620,
+  //     strikedoffprice: 1050,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/228619/lakme-sun-expert-spf-50-ultra-matte-lotion-50-ml_1_display_1602321528_3f1d59a5.jpg",
+  //     name: "lakme sunexpert",
+  //     price: 1620,
+  //     strikedoffprice: 880,
+  //   },
+  //   {
+  //     image_url:
+  //       "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/249451/lakme-eyeconic-curling-mascara-parent_1_display_1450870005_5f5ca42f.jpg",
+  //     name: " Lakme Eyconic",
+  //     price: 599,
+  //     strikedoffprice: 402,
+  //   },
+  //   ]
+  // let parent = document.getElementById('container')
+  //   appenddata(parent,lipstick)
+
+  async function fetchdata(){
+      var res = await fetch("https://purpleproject.herokuapp.com/lakmies")
+    var  data = await res.json()
+    //  console.log(data)
+    appenddata(data)
+     console.log(data)
+    }
+    
+   fetchdata()
+   // console.log(result,"outside")
+
+   function appenddata(data){
+ console.log("data",data)
+   
+ let parent = document.getElementById('container')
+   let cartArr=JSON.parse(localStorage.getItem('cartitems'))||[]
+    data.forEach(function(element) { 
+
+        
+        
+        console.log("lol")
+        let div = document.createElement('div')
+       parent.append(div)
+
+        let img =  document.createElement('img')
+        img.setAttribute('id','imgid')
+        img.src=element.image_url
+        div.append(img)
+
+        
+        let para2 = document.createElement('p')
+        para2.innerText="title:"+element.title
+        div.append(para2)
+
+        let para = document.createElement('p')
+        para.innerText="price:"+element.price
+        div.append(para)
+
+        let para1 = document.createElement('p')
+        para1.innerText="discount price:"+element.offprice
+        div.append(para1)
+        
+        let but =document.createElement('button')
+        but.setAttribute('id','imging')
+        but.textContent='add to cart'
+
+        but.addEventListener('click',function(){
+            addtocart(element)
+        })
+        div.append(but)
+
+        function addtocart(element){
+          // console.log(element)
+          for(let i=0;i<cartArr.length;i++){
+            if(element._id==cartArr[i]._id){
+              alert("Item is already present in the cart")
+              return;
+            }
+          }
+            cartArr.push(element)
+            localStorage.setItem('cartitems',JSON.stringify(cartArr))
+            alert("Added Successfully");
+            window.location.reload();
+        }
+
+
+ 
+
+    
+    });
+}
+
+
+</script>
+
+
