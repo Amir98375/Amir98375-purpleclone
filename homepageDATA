@@ -1,0 +1,287 @@
+<script>
+
+let justarrive = [
+{
+    name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Pink Topaz (12 g)",
+    img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/254799/ny-bae-pro-strobe-cream-pink-topaz-12gm_1_display_1642427519_457923f1.jpg",
+    price : 182,
+},
+{
+    name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Rose Diamond (12 g)",
+    img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/259396/ny-bae-pro-strobe-cream-rose-diamond-12-gm_1_display_1642427413_8b28b827.jpg",
+    price : 187,
+},
+{
+    name : "NY Bae 5 in 1 Lipstick | Travel Friendly | Creamy Finish | Smooth | Light Weight - Pink Hues (7 g)",
+    img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/271962/ny-bae-5-in-1-lipstick-pink-hues-03-7-gm_2_display_1643442132_7049ce09.jpg",
+    price : 299,
+},
+{
+    name : "NY Bae Metallic Eyeliner | Metallic Glitter Finish | Quick Dry | Waterproof | Super Pigmented - Bronze Bash 02 (4.5 ml)",
+    img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/259766/ny-bae-metallic-eyeliner-bronze-bash-02-4-5-ml_2_display_1641804875_7f1a2c14.jpg",
+    price : 187,
+},
+{
+    name : "Purplle Fresh Dew Moisturiser with Squalane & Hyaluronic Acid | All Skin Types | Brightening | Hydrating | Anti-aging | Boosts Collagen Production (45 gm)",
+    img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/259040/purplle-fresh-dew-moisturiser-with-squalane-and-hyaluronic-acid-45-gm_1_display_1642489091_a151e4e1.jpg",
+    price : 321,
+},
+// {
+//     name : "NY Bae Prom Ready| Mini Eyeshadow Pencil| Pink| Glitter| Highly Pigmented- Baby Doll 1(1.5 g)",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/199852/ny-bae-prom-ready-eye-shadow-pencil-baby-doll-1-1-5g_1_display_1625656966_5e020a9e.jpg",
+//     price : 170,
+// },
+// {
+//     name : "Stay Quirky Lipstick Creamy Matte With BadAss Upgrade|Long Lasting| 8hrs Stay| Highly Pigmented|Paraben Free - Red - Stolen Kisses 48 (3.5 g)",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/202882/stay-quirky-lipstick-soft-matte-red-badass-stolen-kisses-48-4-2-g_10_display_1604058853_3e694b0d.jpg",
+//     price : 231,
+// },
+// {
+//     name : "Stay Quirky BadAss Lip Crayon|Transfer-Proof| Smudge-Proof| Intense Pigmentation| Lipstick|Vegan| Nude - Please Me First 14 (2.8 g)",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/164288/stay-quirky-badass-lip-crayon-nude-please-me-first-14-2-8-g_10_display_1629706708_6e3a916f.jpg",
+//     price : 164,
+// },
+// {
+//     name : "Good Vibes Vitamin C Glow Face Wash | Deep Cleansing, Brightening, Refreshing | No Parabens, No Mineral Oil, No Animal Testing (200 ml)",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/266188/good-vibes-vitamin-c-glow-face-wash-200ml_1_display_1643626016_bd9980d3.jpg",
+//     price : 218,
+// },
+// {
+//     name : "Alps Goodness Acne Control Face wash For Oily Skin with Tea Tree, Salicylic Acid & Apple Cider Vinegar (100 ml) | Suitable for Acne Prone Oily Skin | Sulphate Free, Soap Free, Silicone Free, Paraben Free, Mineral Oil Free | Gentle Cleanser",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/275529/alps-goodness-tea-tree-salicylic-acid-apple-cider-vinegar-acne-control-facewash-100-ml_13_display_1641881446_d39a0436.jpg",
+//     price : 159,
+// },
+// {
+//     name : "Good Vibes Hemp Seed Youth Rejuvenation & Hydration Light Face Cream | Anti Ageing, Moisturization, Anti-Oxidants | With Almond, Olive | No Parabens, No Sulphates, No Alcohol, No Mineral Oil, No Animal Testing, Vegan (50 g)",
+//     img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/218832/good-vibes-hemp-seed-hydrating-light-cream-50-gm_1_display_1637910412_8ecd28f5.jpg",
+//     price : 219,
+// },
+
+];
+
+let featured = [
+    {
+        name : "Vaseline Sun + Pollution Protection SPF 30 Body Lotion (400 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/254416/vaseline-sun-pollution-protection-spf-30-body-lotion-400-ml-2_7_display_1626229964_d083f622.jpg",
+        price : 339,
+    },
+    {
+        name : "TRESemme Keratin Smooth Conditioner (190 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/175638/tresemme-keratin-smooth-conditioner-200-ml-18_8_display_1641889176_e837b463.jpg",
+        price : 209,
+    },
+    {
+        name : "Pond's Bright Beauty Spot-less Glow Face Wash With Vitamins (100 g)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/267252/pond-s-bright-beauty-spot-less-glow-face-wash-with-vitamins-100-g_1_display_1607504590_b7a520dc.jpg",
+        price : 149,
+    },
+    {
+        name : "TRESemme Hair Fall Defense Conditioner (190 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/242312/tresemme-hair-fall-defense-conditioner-190-ml-14_8_display_1641882216_796e2a2d.jpg",
+        price : 200,
+    },
+    {
+        name : "MCaffeine Deep Moisturizing Choco Body Butter (250 gm) with Cocoa Butter, Caramel",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/191429/mcaffeine-naked-and-rich-deep-moisturizing-choco-body-butter_9_display_1641558426_144e1008.jpg",
+        price : 484,
+    },
+];
+
+let bestsell = [
+    {
+        name : "Good Vibes Rosehip Radiant Glow Face Serum | Light, Non-Sticky, Brightening | With Vitamin E | No Parabens, No Sulphates, No Animal Testing (10 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/267303/good-vibes-radiant-glow-face-serum-rose-hip-10-ml-1_9_display_1622726784_d6d13626.jpg",
+        price : 211,
+    },
+    {
+        name : "Streax Hair Serum vitalised with Walnut Oil 45 ml",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/264738/streax-hair-serum-vitalised-with-walnut-oil-45-ml_5_display_1631619157_a9b55a17.jpg",
+        price : 96,
+    },
+    {
+        name : "Good Vibes Vitamin C & E Age Defying Face Serum | Fast Aborption | With Orange | No Parabens, No Silicones, No Sulphates, No Animal Testing (10 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/233010/good-vibes-vitamin-c-and-e-age-defying-face-serum-10-ml_8_display_1620452895_b91c499d.jpg",
+        price : 186,
+    },
+    {
+        name : "Garnier Men Acno Fight Pimple Clearing Face Wash (50 g)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/136336/garnier-acno-fight-face-wash-for-men-50-g-13_6_display_1600053818_01b6cd56.jpg",
+        price : 89,
+    },
+    {
+        name : "Good Vibes Papaya Brightening Face Wash | Deep Pore Cleansing, Non-Drying | With Mulberry | No Parabens, No Mineral Oil, No Animal Testing (120 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/249728/good-vibes-brightening-face-wash-papaya-120-ml_6_display_1620453029_e89fdd73.jpg",
+        price : 160,
+    },
+];
+
+let featured1 = [
+    {
+        name : "Naturali Damage Repair Conditioner | With Moringa Oil & Avocado | Revitalizes And Nourishes Damaged Hair | 80 Ml",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/266069/naturali-damage-repair-conditioner-80ml_9_display_1640148456_abdbb22d.jpg",
+        price : 77,
+    },
+    {
+        name : "Naturali Pollution Defence Conditioner | With Green Tea & Avocado | Repairs Pollution Damage | 180 Ml",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/266070/naturali-pollution-defence-conditioner-180ml_8_display_1643109309_3fccf27a.jpg",
+        price : 152,
+    },
+    {
+        name : "Earth Rhythm Bakuchiol Extract - Skin Smoothing Serum - 30 Gm",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/238992/earth-rhythm-bakuchiol-extract-skin-smoothing-serum-30-gm_1_display_1621399237_487438aa.jpg",
+        price : 1238,
+    },
+    {
+        name : "Earth Rhythm 100% Squalane Plant Derived - Hydrating Plumping - 30 Gm",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/238994/earth-rhythm-100-percentage-squalane-plant-derived-hydrating-plumping-30-gm_6_display_1621399375_8b0c51d6.jpg",
+        price : 562,
+    },
+    {
+        name : "Earth Rhythm 2% Alpha Arbutin - Skin Clarifying Serum Hyaluronic Acid - 30 Gm",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/238990/earth-rhythm-2-percentage-alpha-arbutin-skin-clarifying-serum-hyaluronic-acid-30-gm_2_display_1621399195_66bb26f1.jpg",
+        price : 1124,
+    },
+];
+
+let top_picks = [
+    {
+        name : "Maybelline New York Fit Me Matte+Poreless Liquid Foundation Tube, 128 Warm Nude, 18ml",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/182458/maybelline-new-york-fit-me-matte-poreless-liquid-foundation-tube-128-warm-nude-18-ml_9_display_1630930258_6e9a178b.jpg",
+        price : 239,
+    },
+    {
+        name : "Stay Quirky Minis - Kiss Me With Every Lip Color, Set of 12 Mini Lipsticks, Kit 01 (1.2 g) x 12N",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/160170/stay-quirky-lipstick-minis-kiss-me-with-every-lip-color-set-of-12-mini-lipsticks-144-g_4_display_1547022996_28acdecb.jpg",
+        price : 339,
+    },
+    {
+        name : "Garnier Color Naturals Creme hair color, Shade 3 Darkest Brown, 70ml + 60g",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/124209/garnier-color-naturals-nourishing-permanent-hair-colour-cream-darkest-brown-3-10_12_display_1628671613_345db6dc.jpg",
+        price : 153,
+    },
+    {
+        name : "VEGA 3 in 1 Hair Styler - Straightener, Curler and Crimper (VHSCC-01), Black",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/267520/vega-3-in-1-hair-styler-straightener-curler-and-crimper-vhscc-01-black_2_display_1629437541_ba8e91e6.jpg",
+        price : 1399,
+    },
+    {
+        name : "Faces Canada HD Intense Matte Lipstick | Feather light comfort | 10 hrs stay| Primer infused | Flawless HD finish | Made in Germany | Shade - Tea Rose 1.4g",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/191991/faces-canada-ultime-pro-hd-intense-matte-lips-primer-tea-rose-10-1-4-g_7_display_1633694367_5b269fc7.jpg",
+        price : 623,
+    },
+];
+
+
+let Trending_pur = [
+    {
+        name : "NY Bae Brightenin' Primer|Face Primer| For Brightening & Radiant Glow| Removes Creases| Even Skin Tone| All Skin Types| Matte|",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/268739/ny-bae-primer-gold-15g-20_1_display_1640075868_54d01593.jpg",
+        price : 180,
+    },
+    {
+        name : "Neutrogena Ultra Sheer Dry-Touch Sunblock SPF 50+ Ultra Light Clean Feel (30 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/256685/neutrogena-ultra-sheer-spf50-30ml-20-21-20_10_display_1632315208_e253acd7.jpg",
+        price : 225,
+    },
+    {
+        name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Pink Topaz (12 g)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/254799/ny-bae-pro-strobe-cream-pink-topaz-12gm_1_display_1642427519_457923f1.jpg",
+        price : 182,
+    },
+    {
+        name : "Streax Hair Serum vitalised with Walnut Oil 45 ml",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/264738/streax-hair-serum-vitalised-with-walnut-oil-45-ml_5_display_1631619157_a9b55a17.jpg",
+        price : 102,
+    },
+    {
+        name : "Good Vibes Rosehip Radiant Glow Face Serum | Light, Non-Sticky, Brightening | With Vitamin E | No Parabens, No Sulphates, No Animal Testing (30 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/203484/good-vibes-radiant-glow-face-serum-rose-hip-30-ml-1_8_display_1620452619_7fa57ea9.jpg",
+        price : 357,
+    },
+];
+
+let below_rec = [
+    {
+        name : "Good Vibes Shea Butter Deep Moisturizing Body Lotion |Hydrating, Moisturizing | No Parabens, No Sulphates, No Animal Testing (200 ml)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/215458/good-vibes-deep-moisturizing-body-lotion-shea-butter-200-ml-1_7_display_1621054118_a56d7f74.jpg",
+        price : 168,
+    },
+    {
+        name : "Alps Goodness Rose & Squalane Hydrating Gel Body Lotion (300ml) |Best Body Lotion for Summer | Lightweight | Sulphates Free, Paraben Free & Cruelty Free | Vegan",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/215496/alps-goodness-rose-gel-body-lotion-300ml_14_display_1616576769_f28085d8.jpg",
+        price : 215,
+    },
+    {
+        name : "Good Vibes Rosehip Moisture Rich Face Cream | Lightening, Nourishing | With Jojoba Oil | No Parabens, No Sulphates, No Mineral Oil (50 g)",
+        img : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/203489/good-vibes-moisture-rich-face-cream-rosehip-50-g-1_8_display_1620451402_8b0211c1.jpg",
+        price : 183,
+    },
+];
+
+let below_feature1 =[
+    {
+        name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Rose Diamond (12 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/259396/ny-bae-pro-strobe-cream-rose-diamond-12-gm_1_display_1642427413_8b28b827.jpg",
+        price : 187,
+    },
+    {
+        name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Gold Sapphire (12 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/254800/ny-bae-pro-strobe-cream-gold-sapphire-12-gm_1_display_1642427617_4a0fe10e.jpg",
+        price : 190,
+    },
+    {
+        name : "NY Bae Shine & Shimmer Highlighter | Glow Finish | Light Weight | Easily Blendable - Rustic Rose Gold 3 (5 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/251833/ny-bae-shine-and-shimmer-highlighter-rustic-rose-gold-5gm_3_display_1635324860_15617e73.jpg",
+        price : 261,
+    },
+];
+
+
+// Main home page local storage do not touch the data---------------->>>>>>>>>>>>>>>>>>>------------>>>>>>>>>
+localStorage.setItem("BELOW_FEATURED",JSON.stringify(below_feature1));
+
+localStorage.setItem("BelowREC",JSON.stringify(below_rec));
+
+localStorage.setItem("TRENDING",JSON.stringify(Trending_pur));
+
+localStorage.setItem("TOPPICKS",JSON.stringify(top_picks));
+
+localStorage.setItem("FEATURED",JSON.stringify(featured1));
+
+localStorage.setItem("BestSeller",JSON.stringify(bestsell));
+
+localStorage.setItem('feature',JSON.stringify(featured));
+
+localStorage.setItem('Justarrived',JSON.stringify(justarrive));
+
+
+//--------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>--------------------------------------------------->>>>>>>>>>>>>>>>>>
+
+
+// For trial of cart page products data
+
+let cart =[
+    {
+        name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Rose Diamond (12 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/259396/ny-bae-pro-strobe-cream-rose-diamond-12-gm_1_display_1642427413_8b28b827.jpg",
+        price : 187,
+    },
+    {
+        name : "NY Bae Pro Strobe Cream | High Shine | Moisturising | Radiant Skin | Light Weight | Blendable | Highlighting - Gold Sapphire (12 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/254800/ny-bae-pro-strobe-cream-gold-sapphire-12-gm_1_display_1642427617_4a0fe10e.jpg",
+        price : 190,
+    },
+    {
+        name : "NY Bae Shine & Shimmer Highlighter | Glow Finish | Light Weight | Easily Blendable - Rustic Rose Gold 3 (5 g)",
+        img : "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/251833/ny-bae-shine-and-shimmer-highlighter-rustic-rose-gold-5gm_3_display_1635324860_15617e73.jpg",
+        price : 261,
+    },
+];
+
+// local storage---------------------------->>>>>----------------------------------->>>>>>>>>>>>>
+// For trial of cart page products data
+localStorage.setItem("CARTDIV",JSON.stringify(cart));
+
+
+
+</script>
