@@ -16,4 +16,6 @@ In a span of 5 days, we created Purple's Clone - American e commerce website. It
           <img src="https://raw.githubusercontent.com/Amir98375/imagesproject/master/checkout.JPG">
           <h3>Payment Page</h3>
           <img src='https://raw.githubusercontent.com/Amir98375/imagesproject/master/payment.JPG'>
+          <h3>After Enter otp user will get back to home page</h3>
+          <img src = "https://raw.githubusercontent.com/Amir98375/imagesproject/master/otp.JPG">
   
